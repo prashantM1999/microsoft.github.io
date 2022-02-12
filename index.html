@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="app.component.css">
+<form>
+
+    <div class="container">
+        <div class="untitled">
+            <span>Microsoft From</span>
+        </div>
+
+        <div class="content-container">
+            <p> <span class="red">*</span> Required</p>
+
+            <div class="div">
+                <div class="name">1. What is your name ?</div><span class="red"> *</span>
+                <div class="input-div"> <input #txt type="input" ngModel name="answer" placeholder="Enter your answer">
+                </div>
+            </div>
+
+            <div class="div">
+                <div class="name">2. Enter your college name</div><span class="red"> *</span>
+                <div class="input-div"> <input #txt type="input" ngModel name="answer" placeholder="Enter your answer">
+                </div>
+            </div>
+
+            <div class="div">
+                <div class="name">3. Enter your email</div><span class="red"> *</span>
+                <div class="input-div"> <input #txt type="input" ngModel name="answer" placeholder="Enter your answer">
+                </div>
+            </div>
+
+            <div class="div">
+                <div class="name">4. Enter your mobile no</div><span class="red"> *</span>
+                <div class="input-div"> <input  type="input" ngModel name="answer" placeholder="Enter your answer">
+                </div>
+            </div>
+
+            <div>
+                <button class="btn" (click)="getVal(answer.value)">Submit</button>
+                <p class="never">Never give out your password. <a
+                        href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__TOGGmJUMUIxRkpFWUxYVllIV01ZTTFaUUdNMVpSMC4u#View=ReportAbuse">
+                        Report abuse </a></p>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer1">
+                This content is created by the owner of the form. The data you submit will be sent to the
+                form owner. Microsoft is not responsible for the privacy or security practices of its customers,
+                including those of this form owner. Never give out your password.
+            </div>
+
+            <div class="powered">
+                Powered by Microsoft Forms <span>|</span>
+                <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank">Privacy and cookies</a>
+                <span>|</span>
+                <a href="https://www.microsoft.com/en-us/servicesagreement/default.aspx" target="_blank">Terms of
+                    use</a>
+            </div>
+        </div>
+
+
+    </div>
+</form>
